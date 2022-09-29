@@ -18,3 +18,18 @@ variable "public_key" {
 variable "dns_zone" {
     type = string
 }
+
+variable "vpc_cidr" {
+    type = string
+    default = "10.2.0.0/16"
+}
+
+variable "demo_name" {
+    type = string
+    default = "vladimir-demo"
+}
+
+variable "management_cidr_blocks" {
+    type = list(string)
+    default = []
+}

@@ -27,3 +27,12 @@ variable "instance_type" {
 variable "target_group" {
     type = string
 }
+
+variable "app_cidr_access" {
+    default  = ["0.0.0.0/0"]
+}
+
+variable "app_cidr_management" {
+    type = list(string)
+    default  = []
+}
